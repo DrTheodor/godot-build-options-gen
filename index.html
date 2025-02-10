@@ -140,15 +140,15 @@
               notModule: true,
             },
             // TODO: Uncomment when Godot 4.3 is released.
-            // {
-            //   id: "threads",
-            //   name: "Enable threading support",
-            //   description:
-            //     "Disabling this removes SharedArrayBuffer and cross-origin isolation requirements for web exports.",
-            //   enabled: true,
-            //   default: true,
-            //   notModule: true,
-            // },
+            {
+               id: "threads",
+               name: "Enable threading support",
+               description:
+                 "Disabling this removes SharedArrayBuffer and cross-origin isolation requirements for web exports.",
+               enabled: true,
+               default: true,
+               notModule: true,
+            },
             {
               id: "precision",
               name: "Enable double-precision floats",
@@ -213,15 +213,15 @@
               notModule: true,
             },
             // TODO: Uncomment when Godot 4.3 is released.
-            // {
-            //   id: "d3d12",
-            //   name: "Enable Direct3D 12",
-            //   description:
-            //     "Required to use Forward+ and Mobile rendering methods with Direct3D 12 (only effective when targeting Windows). If enabled, run `misc/scripts/install_d3d12_sdk_windows.py` in the Godot repository to set up dependencies before compiling.",
-            //   enabled: false,
-            //   default: false,
-            //   notModule: true,
-            // },
+            {
+              id: "d3d12",
+              name: "Enable Direct3D 12",
+              description:
+                "Required to use Forward+ and Mobile rendering methods with Direct3D 12 (only effective when targeting Windows). If enabled, run `misc/scripts/install_d3d12_sdk_windows.py` in the Godot repository to set up dependencies before compiling.",
+              enabled: false,
+              default: false,
+              notModule: true,
+            },
             // "astcenc" isn't included as it's editor-only.
             {
               id: "basis_universal",
@@ -272,14 +272,14 @@
             },
             // "etcpak" isn't included as it's editor-only.
             // TODO: Uncomment when Godot 4.3 is released.
-            // {
-            //   id: "fbx",
-            //   name: "fbx",
-            //   description:
-            //     "Required to load non-imported 3D scenes in the FBX format.",
-            //   enabled: true,
-            //   default: true,
-            // },
+            {
+              id: "fbx",
+              name: "fbx",
+              description:
+                "Required to load non-imported 3D scenes in the FBX format.",
+              enabled: true,
+              default: true,
+            },
             {
               id: "freetype",
               name: "FreeType",
@@ -319,14 +319,14 @@
               default: true,
             },
             // TODO: Uncomment when Godot 4.3 is released.
-            // {
-            //   id: "interactive_music",
-            //   name: "Interactive music",
-            //   description:
-            //     "Required to use interactive music (AudioStreamInteractive, AudioStreamPlaylist, AudioStreamSynchronized resources).",
-            //   enabled: true,
-            //   default: true,
-            // },
+            {
+              id: "interactive_music",
+              name: "Interactive music",
+              description:
+                "Required to use interactive music (AudioStreamInteractive, AudioStreamPlaylist, AudioStreamSynchronized resources).",
+              enabled: true,
+              default: true,
+            },
             {
               id: "jpg",
               name: "JPG",
@@ -571,7 +571,7 @@
           // validate user input to avoid XSS vulnerabilities!
           generatedOptions() {
             generated =
-              "# Generated using https://godot-build-options-generator.github.io\n\n";
+              "# Generated using https://drtheodor.github.io/godot-built-options-gen/\n\n";
 
             this.options.forEach((option) => {
               if (option.text) {
